@@ -38,51 +38,32 @@ Installation & Setup
    git clone [https://github.com/rdx644/Agentic-Commerce-.git](https://github.com/rdx644/Agentic-Commerce-.git)
    cd Agentic-Commerce-
 
-Configure Environment Variables
-Create a .env file in the root directory:
-
-Code snippet
+Set up environment variables
+Create a .env file in the root directory and configure your keys:
 PORT=8080
-DATABASE_URL=your_database_url
+DATABASE_URL=your_database_connection_string
 OPENAI_API_KEY=your_openai_api_key
 STRIPE_SECRET_KEY=your_stripe_secret_key
-Install Dependencies
+JWT_SECRET=your_jwt_secret_key
 
-Bash
-# For Node.js projects
+Install dependencies
 npm install
 
-# For Python projects
-pip install -r requirements.txt
-Run the Application
-
-Bash
-# For Node.js
+Run the application
 npm start
 
-# For Python
-python main.py
-📁 Project Structure
-Plaintext
-Agentic-Commerce-/
+Project structure
+payreclaim-app/
 ├── src/
 │   ├── agents/        # AI Agent logic and decision flows
-│   ├── api/           # Endpoints for checkout sessions & orders
-│   ├── services/      # Payment & inventory integrations
-│   └── models/        # Database schemas and DTOs
-├── tests/             # Unit and integration tests
+│   ├── api/           # Endpoints for cart, orders, and checkouts
+│   ├── reclamation/   # Payment recovery and refund processing
+│   ├── models/        # Database schemas and DTOs
+│   └── services/      # Payment gateway and external API integrations
+├── tests/             # Unit and integration test suites
 ├── .env.example
-├── package.json / requirements.txt
+├── package.json
 └── README.md
- Running Tests
-Execute the test suite to verify endpoints and agent execution:
 
-Bash
-# Node.js
+Testing
 npm test
-
-# Python
-pytest
-
-License
-Distributed under the MIT License. See LICENSE for details.
