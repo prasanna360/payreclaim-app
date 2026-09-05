@@ -42,7 +42,7 @@ Make sure you have the following installed on your machine:
    git clone [https://github.com/prasanna360/payreclaim-app.git](https://github.com/prasanna360/payreclaim-app.git)
    cd payreclaim-app
 
-   ## 📁 Project Structure
+## 📁 Project Structure
 
 ```text
 payreclaim-app/
