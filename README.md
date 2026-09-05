@@ -1,5 +1,4 @@
-# PayReclaim & Agentic Commerce 
-
+# PayReclaim
 > An AI-powered agentic commerce platform integrated with automated payment reclamation and dispute management workflows.
 
 ---
